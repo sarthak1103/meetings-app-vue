@@ -1,0 +1,4 @@
+
+    const token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjIxbWNpMTEwN0BleGFtcGxlLmNvbSIsInVzZXJJZCI6IjYzODMzY2FlOTgwMjFkMDAxNTUyMjc3ZiIsImlhdCI6MTY2OTU2MzU4NSwiZXhwIjoxNjY5NjQ5OTg1fQ.nkY6v-zIrRBugmqg2WfbFf-6xDRrxfJN9F_yM4saYOI'
+
+export default token;
