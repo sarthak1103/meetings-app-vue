@@ -8,7 +8,7 @@
         <b-navbar-nav>
           <!-- We are building Single Page Application (SPA) -->
           <!-- if we use "to" instead of "href" internally Vue Bootstrap uses <router-link> instead of <a> -> This will avoid page refresh -->
-          <b-nav-item to="/">Calendar</b-nav-item>
+          <b-nav-item to="/calendar">Calendar</b-nav-item>
           <b-nav-item to="/mettings">Meetings</b-nav-item>
           <b-nav-item to="/teams">Teams</b-nav-item>
         </b-navbar-nav>

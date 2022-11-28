@@ -1,6 +1,7 @@
 import Router from 'vue-router';
 import LoginPage from '@/components/pages/LoginPage.vue'
 import RegisterPage from '@/components/pages/RegisterPage.vue'
+import CalendarPage from '@/components/pages/CalendarPage.vue'
 
 
 
@@ -20,6 +21,11 @@ const router = new Router({
             path: '/login',
             component: LoginPage
         },
+        {
+            name:'CalendarPage',
+            path: '/calendar',
+            component: CalendarPage
+        }
        
     ]
 });

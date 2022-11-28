@@ -9,12 +9,12 @@
           header-text-variant="white"
           >
           <b-card-text>
-            <b-form @submit.prevent="signUp">
+            <b-form @submit.prevent="signUp" name="form">
               <b-form-group
                description=" Enter your Full Name"
                label="FullName"
               >
-              <b-form-input v-model="name" required></b-form-input>
+              <b-form-input v-model="form.name" required></b-form-input>
 
               </b-form-group>
 
@@ -22,7 +22,7 @@
                description=" Enter your Email"
                label="Email"
               >
-              <b-form-input v-model="email" required></b-form-input>
+              <b-form-input v-model="form.email" required></b-form-input>
 
               </b-form-group>
 
@@ -30,7 +30,7 @@
                description=" Enter your password"
                label="Password"
               >
-              <b-form-input type="password" v-model="password" required></b-form-input>
+              <b-form-input type="password" v-model="form.password" required></b-form-input>
 
               </b-form-group>
               <b-form-group>
@@ -47,20 +47,24 @@
 
 
 <script>
-
+import { signUp } from '../services/auth'
 export default {
   name:'RegisterPage',
   data(){
   return  {
+    form:{
     name:'',
     email:'',
     password:'',
   }
+}
 },
   methods:{
      async signUp()
      {
-
+      const data = await signUp(this.form);
+      console.log(data);
+      this.$router.push({ name: 'login' }); 
      }
   }
 
